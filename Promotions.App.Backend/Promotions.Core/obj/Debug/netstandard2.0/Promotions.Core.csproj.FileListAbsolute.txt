@@ -1,0 +1,9 @@
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Core\bin\Debug\netstandard2.0\Promotions.Core.deps.json
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Core\bin\Debug\netstandard2.0\Promotions.Core.dll
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Core\bin\Debug\netstandard2.0\Promotions.Core.pdb
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Core\obj\Debug\netstandard2.0\Promotions.Core.csproj.CoreCompileInputs.cache
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Core\obj\Debug\netstandard2.0\Promotions.Core.AssemblyInfoInputs.cache
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Core\obj\Debug\netstandard2.0\Promotions.Core.AssemblyInfo.cs
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Core\obj\Debug\netstandard2.0\Promotions.Core.dll
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Core\obj\Debug\netstandard2.0\Promotions.Core.pdb
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Core\obj\Debug\netstandard2.0\Promotions.Core.csprojAssemblyReference.cache

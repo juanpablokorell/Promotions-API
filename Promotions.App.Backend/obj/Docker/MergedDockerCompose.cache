@@ -1,0 +1,16 @@
+services:
+  promotions.api:
+    build:
+      context: D:\Challenge Fravega\Promotions.App.Backend
+      dockerfile: Promotions.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: promotionsapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\juanp\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\juanp\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

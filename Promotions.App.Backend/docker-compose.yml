@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+    promotions.api:
+        image: ${DOCKER_REGISTRY-}promotionsapi
+        build:
+            context: .
+            dockerfile: Promotions.API/Dockerfile
+        ports: 
+            - "8000:80"
+            - "44348:443"
+        depends_on: 
+            - mongo
+        links: 
+            - mongo
+    mongo:
+        container_name: mongo
+        image: mongo
+        restart: always
+        volumes:
+          - ${WEBAPP_STORAGE_HOME}/site:/data/db

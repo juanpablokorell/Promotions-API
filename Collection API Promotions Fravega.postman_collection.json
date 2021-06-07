@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "79940f35-dc5d-4140-8393-a6f2f254fab6",
+		"name": "Collection API Promotions Fravega",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetCurrentPromotions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/promotions/GetCurrentPromotions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"promotions",
+						"GetCurrentPromotions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/promotions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"promotions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPromotionByID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/promotions/GetPromotionsDetails/dd706782-2cb4-4169-bfc0-46fb6d05bd75",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"promotions",
+						"GetPromotionsDetails",
+						"dd706782-2cb4-4169-bfc0-46fb6d05bd75"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCurrentPromotionBySale",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8000/api/promotions/GetCurrentPromotionsBySale?PaymentMethods=TARJETA_CREDITO&Bank=SANTANDER RIO&ProductCategories=CELULARES&ProductCategories=AUDIO&ProductCategories=TECNOLOGIA",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"promotions",
+						"GetCurrentPromotionsBySale"
+					],
+					"query": [
+						{
+							"key": "PaymentMethods",
+							"value": "TARJETA_CREDITO"
+						},
+						{
+							"key": "Bank",
+							"value": "SANTANDER RIO"
+						},
+						{
+							"key": "ProductCategories",
+							"value": "CELULARES"
+						},
+						{
+							"key": "ProductCategories",
+							"value": "AUDIO"
+						},
+						{
+							"key": "ProductCategories",
+							"value": "TECNOLOGIA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPromotionByDate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/promotions/GetCurrentPromotionsByDate/2021-06-05",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"promotions",
+						"GetCurrentPromotionsByDate",
+						"2021-06-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePromotion_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PaymentMethods\":[],\r\n    \"Banks\":[],\r\n    \"ProductCategories\":[],\r\n    \"MaximumAmountInstallments\":12,\r\n     \"InterestValueFees\":0,\r\n      \"DiscountPercentage\":null,\r\n     \"StartDate\":\"2021-07-05\",\r\n     \"EndDate\":\"2021-12-05\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/promotions/CreatePromotion",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"promotions",
+						"CreatePromotion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePromotion_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PaymentMethods\":[\"EFECTIVO\"],\r\n    \"Banks\":[],\r\n    \"ProductCategories\":[\"HOGAR\",\"JARDIN\"],\r\n    \"MaximumAmountInstallments\":null,\r\n     \"InterestValueFees\":0,\r\n      \"DiscountPercentage\":15,\r\n     \"StartDate\":\"2021-06-05\",\r\n     \"EndDate\":\"2021-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/promotions/CreatePromotion",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"promotions",
+						"CreatePromotion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePromotion_3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PaymentMethods\":[\"TARJETA_CREDITO\"],\r\n    \"Banks\":[\"ICBC\",\"SANTANDER RIO\",\"GALICIA\"],\r\n    \"ProductCategories\":[\"CELULARES\",\"AUDIO\",\"TECNOLOGIA\"],\r\n    \"MaximumAmountInstallments\":12,\r\n     \"InterestValueFees\":9,\r\n      \"DiscountPercentage\":null,\r\n     \"StartDate\":\"2021-06-05\",\r\n     \"EndDate\":\"2021-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/promotions/CreatePromotion",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"promotions",
+						"CreatePromotion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePromotion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/promotions/DeletePromotion/65b2d779-b1a2-4326-a973-234ea070bc07",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"promotions",
+						"DeletePromotion",
+						"65b2d779-b1a2-4326-a973-234ea070bc07"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePromotionValidity",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\"2021-06-20\",\r\n\"2021-06-20\"\r\n  ",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/promotions/UpdatePromotionValidy/?id=dd706782-2cb4-4169-bfc0-46fb6d05bd75&startDate=2021-06-09&endDate=2022-07-01",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"promotions",
+						"UpdatePromotionValidy",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "dd706782-2cb4-4169-bfc0-46fb6d05bd75"
+						},
+						{
+							"key": "startDate",
+							"value": "2021-06-09"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-07-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePromotion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PaymentMethods\":[],\r\n    \"Banks\":[],\r\n    \"ProductCategories\":[\"ELECTROCOCINA\",\"GRANDESELECTRO\",\"HOGAR\"],\r\n    \"MaximumAmountInstallments\":12,\r\n     \"InterestValueFees\":0,\r\n      \"DiscountPercentage\":null,\r\n     \"StartDate\":\"2021-07-05\",\r\n     \"EndDate\":\"2021-12-05\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/promotions/UpdatePromotion/ab969129-47fa-4d41-832d-258eaf15773e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"promotions",
+						"UpdatePromotion",
+						"ab969129-47fa-4d41-832d-258eaf15773e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

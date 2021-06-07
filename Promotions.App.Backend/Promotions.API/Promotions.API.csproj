@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>451a351a-0560-4b6f-bf5a-2ca452b2acfc</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controller\CreatePromotionController.cs" />
+    <Compile Remove="Controller\DeletePromotionController.cs" />
+    <Compile Remove="Controller\GetAllPromotionController.cs" />
+    <Compile Remove="Controller\GetCurrentPromotionBySaleController.cs" />
+    <Compile Remove="Controller\GetCurrentPromotionController.cs" />
+    <Compile Remove="Controller\GetPromotionByDateController.cs" />
+    <Compile Remove="Controller\GetPromotionsByIdController.cs" />
+    <Compile Remove="Controller\UpdatePromotionController.cs" />
+    <Compile Remove="Controller\UpdatePromotionValidiyController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.2.3" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.15" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Promotions.Core\Promotions.Core.csproj" />
+    <ProjectReference Include="..\Promotions.Infrastucture\Promotions.Infrastucture.csproj" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+
+</Project>

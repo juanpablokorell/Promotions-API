@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "I0fOt4hxqv1X8wBnmzaRD35FPxVI8yZoPbffIfI9PGr8tzCankqZ27uhupyeIcm60W3Stuyc9WpJwvQVZix82g==",
+  "success": true,
+  "projectFilePath": "D:\\Challenge Fravega\\Promotions.App.Backend\\Promotions.Core\\Promotions.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\juanp\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512",
+    "C:\\Users\\juanp\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\juanp\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

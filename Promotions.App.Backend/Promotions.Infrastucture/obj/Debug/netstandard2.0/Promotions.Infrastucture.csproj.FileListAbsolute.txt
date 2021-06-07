@@ -1,0 +1,12 @@
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\bin\Debug\netstandard2.0\Promotions.Infrastucture.deps.json
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\bin\Debug\netstandard2.0\Promotions.Infrastucture.dll
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\bin\Debug\netstandard2.0\Promotions.Infrastucture.pdb
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\bin\Debug\netstandard2.0\Promotions.Core.dll
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\bin\Debug\netstandard2.0\Promotions.Core.pdb
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\obj\Debug\netstandard2.0\Promotions.Infrastucture.csprojAssemblyReference.cache
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\obj\Debug\netstandard2.0\Promotions.Infrastucture.csproj.CoreCompileInputs.cache
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\obj\Debug\netstandard2.0\Promotions.Infrastucture.AssemblyInfoInputs.cache
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\obj\Debug\netstandard2.0\Promotions.Infrastucture.AssemblyInfo.cs
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\obj\Debug\netstandard2.0\Promotions.Infrastucture.csproj.CopyComplete
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\obj\Debug\netstandard2.0\Promotions.Infrastucture.dll
+D:\Challenge Fravega\Promotions.App.Backend\Promotions.Infrastucture\obj\Debug\netstandard2.0\Promotions.Infrastucture.pdb

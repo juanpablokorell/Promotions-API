@@ -1,0 +1,31 @@
+services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    volumes:
+    - /site:/data/db:rw
+  promotions.api:
+    build:
+      context: D:\Challenge Fravega\Promotions.App.Backend
+      dockerfile: Promotions.API/Dockerfile
+    depends_on:
+      mongo:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: promotionsapi
+    links:
+    - mongo
+    ports:
+    - published: 8000
+      target: 80
+    - target: 80
+    - published: 44348
+      target: 443
+    - target: 443
+    volumes:
+    - C:\Users\juanp\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\juanp\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
